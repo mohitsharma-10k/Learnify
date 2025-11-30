@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascend Academy - Online Learning Platform (Pure CSS)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="logo">Learnify<span>.</span></a>
+                <nav class="nav-links">
+                    <a href="#courses">Courses</a>
+                    <a href="#instructors">Instructors</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>
+                    Unlock Your Potential with <span>Ascend Academy</span>
+                </h1>
+                <p>
+                    Join thousands of learners and access top-rated courses from expert instructors. Learn anytime, anywhere.
+                </p>
+
+                <div class="search-container">
+                    <input type="search" placeholder="Search for courses, skills, or instructors..." aria-label="Search courses">
+                    <button type="submit">Search</button>
+                </div>
+
+                <button class="hero-cta-btn">
+                    Find Courses
+                </button>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background-color: var(--color-card-bg);">
+            <div class="container">
+                <h2 class="section-heading">Popular Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <p role="img" aria-label="Development Icon">💻</p>
+                        <p>Development</p>
+                    </div>
+                    <div class="category-card">
+                        <p role="img" aria-label="Design Icon">🎨</p>
+                        <p>Design</p>
+                    </div>
+                    <div class="category-card">
+                        <p role="img" aria-label="Business Icon">📈</p>
+                        <p>Business</p>
+                    </div>
+                    <div class="category-card">
+                        <p role="img" aria-label="Languages Icon">🗣️</p>
+                        <p>Languages</p>
+                    </div>
+                    <div class="category-card">
+                        <p role="img" aria-label="Academics Icon">📚</p>
+                        <p>Academics</p>
+                    </div>
+                    <div class="category-card">
+                        <p role="img" aria-label="Music Icon">🎵</p>
+                        <p>Music</p>
+                    </div>
+                    <div class="category-card">
+                        <p role="img" aria-label="Lifestyle Icon">🧘</p>
+                        <p>Lifestyle</p>
+                    </div>
+                    <div class="category-card">
+                        <p role="img" aria-label="Science Icon">🧪</p>
+                        <p>Science</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="section-padding">
+            <div class="container">
+                <h2 class="section-heading">Featured Courses</h2>
+
+                <div class="course-toolbar">
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="level-select" style="font-weight: 600;">Level:</label>
+                            <select id="level-select" style="padding: 0.5rem; border: 1px solid #D1D5DB; border-radius: 0.5rem;">
+                                <option>All</option>
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="price-select" style="font-weight: 600;">Price:</label>
+                            <select id="price-select" style="padding: 0.5rem; border: 1px solid #D1D5DB; border-radius: 0.5rem;">
+                                <option>All</option>
+                                <option>Free</option>
+                                <option>Paid</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <input type="checkbox" id="certificate" style="transform: scale(1.2);">
+                        <label for="certificate" style="font-weight: 600;">Certificate</label>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <img src="https://placehold.co/600x400/5e669e/ffffff?text=Web+Dev" onerror="this.onerror=null;this.src='https://placehold.co/600x400/5e669e/ffffff?text=Web+Dev';" alt="Web Development">
+                        <div class="course-content">
+                            <h3>Modern Web Development Bootcamp</h3>
+                            <div class="course-footer">
+                                <div class="rating">
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span style="color: #9CA3AF;" role="img" aria-label="half star">⭐</span>
+                                    <span class="text-light">(4.8)</span>
+                                </div>
+                                <span class="price">$49</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Design+Masterclass" onerror="this.onerror=null;this.src='https://placehold.co/600x400/9b59b6/ffffff?text=Design+Masterclass';" alt="Graphic Design">
+                        <div class="course-content">
+                            <h3>Graphic Design Masterclass</h3>
+                            <div class="course-footer">
+                                <div class="rating">
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span style="color: #9CA3AF;" role="img" aria-label="empty star">⭐</span>
+                                    <span class="text-light">(4.5)</span>
+                                </div>
+                                <span class="price">$39</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://placehold.co/600x400/4e8975/ffffff?text=Data+Analysis" onerror="this.onerror=null;this.src='https://placehold.co/600x400/4e8975/ffffff?text=Data+Analysis';" alt="Business Analytics">
+                        <div class="course-content">
+                            <h3>Business Analytics Fundamentals</h3>
+                            <div class="course-footer">
+                                <div class="rating">
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span class="text-light">(4.9)</span>
+                                </div>
+                                <span class="price free">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://placehold.co/600x400/e67e22/ffffff?text=Language+Class" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e67e22/ffffff?text=Language+Class';" alt="Language Learning">
+                        <div class="course-content">
+                            <h3>Spanish for Beginners</h3>
+                            <div class="course-footer">
+                                <div class="rating">
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span role="img" aria-label="star">⭐</span>
+                                    <span style="color: #9CA3AF;" role="img" aria-label="empty star">⭐</span>
+                                    <span class="text-light">(4.6)</span>
+                                </div>
+                                <span class="price">$29</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instructors" class="section-padding" style="background-color: var(--color-card-bg);">
+            <div class="container">
+                <h2 class="section-heading">Meet Our Instructors</h2>
+                <div class="course-grid instructor-grid">
+                    <div class="instructor-card">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="Instructor John">
+                        <h3>John Carter</h3>
+                        <p>Web Developer</p>
+                        <p>10+ years teaching full-stack development and JavaScript frameworks.</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="https://i.pravatar.cc/150?img=17" alt="Instructor Lisa">
+                        <h3>Lisa Wong</h3>
+                        <p>Graphic Designer</p>
+                        <p>Award-winning designer with a passion for creative education.</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="https://i.pravatar.cc/150?img=61" alt="Instructor Ahmed">
+                        <h3>Ahmed El-Sayed</h3>
+                        <p>Business Analyst</p>
+                        <p>Expert in data-driven business strategies and analytics tools.</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="https://i.pravatar.cc/150?img=43" alt="Instructor Maria">
+                        <h3>Maria Garcia</h3>
+                        <p>Language Coach</p>
+                        <p>Specialist in immersive language learning for all ages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-heading">What Our Students Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://i.pravatar.cc/150?img=47" alt="Student Anna">
+                            <div>
+                                <h4 style="font-weight: 700; color: var(--color-text-dark); margin: 0;">Anna Smith</h4>
+                                <p style="font-size: 0.875rem; color: var(--color-text-light); margin: 0;">Marketing Student</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            “The courses are exceptionally well-structured and easy to follow. I landed my first dream job thanks to the skills I gained at Ascend Academy!”
+                        </p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://i.pravatar.cc/150?img=52" alt="Student Mark">
+                            <div>
+                                <h4 style="font-weight: 700; color: var(--color-text-dark); margin: 0;">Mark Lee</h4>
+                                <p style="font-size: 0.875rem; color: var(--color-text-light); margin: 0;">Entrepreneur</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            “Great instructors and a huge variety of topics. The platform is incredibly intuitive, responsive, and makes learning a pleasure.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section-padding" style="background-color: var(--color-card-bg);">
+            <div class="container">
+                <h2 class="section-heading">Latest Articles</h2>
+                <div class="article-grid">
+                    <div class="article-card">
+                        <img src="https://placehold.co/600x300/f0b4b4/ffffff?text=Study+Tips" onerror="this.onerror=null;this.src='https://placehold.co/600x300/f0b4b4/ffffff?text=Study+Tips';" alt="Study Tips">
+                        <div class="article-content">
+                            <p>June 2024 • 5 min read</p>
+                            <h3>5 Tips to Boost Your Online Learning</h3>
+                            <p>Discover actionable strategies to stay motivated and productive in your online courses.</p>
+                            <a href="#" class="read-more">
+                                Read More <span style="margin-left: 0.25rem; font-size: 1.2rem;">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <img src="https://placehold.co/600x300/b4d6f0/ffffff?text=Trending+Skills" onerror="this.onerror=null;this.src='https://placehold.co/600x300/b4d6f0/ffffff?text=Trending+Skills';" alt="Trending Skills">
+                        <div class="article-content">
+                            <p>May 2024 • 7 min read</p>
+                            <h3>Top 10 In-Demand Skills in 2024</h3>
+                            <p>Stay ahead in your career by mastering these trending skills this year.</p>
+                            <a href="#" class="read-more">
+                                Read More <span style="margin-left: 0.25rem; font-size: 1.2rem;">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <img src="https://placehold.co/600x300/b4f0b4/ffffff?text=Course+Selection" onerror="this.onerror=null;this.src='https://placehold.co/600x300/b4f0b4/ffffff?text=Course+Selection';" alt="Course Selection">
+                        <div class="article-content">
+                            <p>April 2024 • 4 min read</p>
+                            <h3>How to Choose the Right Course</h3>
+                            <p>A step-by-step guide to selecting courses that match your goals and interests.</p>
+                            <a href="#" class="read-more">
+                                Read More <span style="margin-left: 0.25rem; font-size: 1.2rem;">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section-padding">
+            <div class="container faq-container">
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="faq-item">
+                        <details>
+                            <summary class="faq-summary">
+                                How do I enroll in a course?
+                                <span style="font-size: 1.25rem;">▼</span>
+                            </summary>
+                            <div class="faq-details">
+                                <p>Simply create an account, browse our comprehensive course catalog, and click the "Enroll" button on your chosen course page.</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary class="faq-summary">
+                                Are there any free courses?
+                                <span style="font-size: 1.25rem;">▼</span>
+                            </summary>
+                            <div class="faq-details">
+                                <p>Yes! We offer a selection of high-quality free courses across various categories. You can easily find them using the price filters in the course section.</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary class="faq-summary">
+                                Do I get a certificate after completion?
+                                <span style="font-size: 1.25rem;">▼</span>
+                            </summary>
+                            <div class="faq-details">
+                                <p>Most courses offer a certificate upon successful completion of all modules and quizzes. Please check the individual course details for specific certification information.</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary class="faq-summary">
+                                Can I access courses on mobile?
+                                <span style="font-size: 1.25rem;">▼</span>
+                            </summary>
+                            <div class="faq-details">
+                                <p>Absolutely! Our platform is fully responsive and works seamlessly on all devices, including smartphones and tablets, allowing you to learn on the go.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>
+                    Get the latest updates, course launches, and exclusive offers straight to your inbox.
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 style="color: white;">Ascend<span>.</span></h3>
+                    <p>Empowering learners worldwide with quality online education and certification.</p>
+                </div>
+                <div>
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: support@ascend.com</li>
+                        <li>Phone: +1 (800) 123-4567</li>
+                        <li>123 Learning St, Edutown</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter">
+                            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4.41c-.65.29-1.35.49-2.09.58A3.89 3.89 0 0019 3a4.02 4.02 0 01-2.45.94A3.94 3.94 0 0012.5 7.5a11.23 11.23 0 01-8.15-4.11 3.95 3.95 0 001.2 5.25A3.92 3.92 0 013 8v.05a3.94 3.94 0 003.15 3.86 3.95 3.95 0 01-1.78.07 3.94 3.94 0 003.67 2.73 7.89 7.89 0 01-4.93 1.7 7.74 7.74 0 01-.94-.05 11.23 11.23 0 006.07 1.78c7.28 0 11.25-6.04 11.25-11.24 0-.17 0-.33-.01-.5A8.04 8.04 0 0020 4.41z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4a2 2 0 00-2 2v16a2 2 0 002 2h16a2 2 0 002-2V4a2 2 0 00-2-2zM18.4 7.7h-2.1c-.5 0-.7.3-.7.8V10h2.8l-.4 3h-2.4v7h-3V13H9v-3h2.3V8c0-2.3 1.4-3.5 3.5-3.5 1 0 1.9.1 2.2.2v2z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c2.75 0 3.12.01 4.22.06 1.1.05 1.75.24 2.13.38.45.16.85.4 1.22.77.37.37.61.77.77 1.22.14.38.33 1.03.38 2.13.05 1.1.06 1.47.06 4.22s-.01 3.12-.06 4.22c-.05 1.1-.24 1.75-.38 2.13-.16.45-.4.85-.77 1.22-.37.37-.77.61-1.22.77-.38.14-1.03.33-2.13.38-1.1.05-1.47.06-4.22.06s-3.12-.01-4.22-.06c-1.1-.05-1.75-.24-2.13-.38-.45-.16-.85-.4-1.22-.77-.37-.37-.61-.77-.77-1.22-.14-.38-.33-1.03-.38-2.13-.05-1.1-.06-1.47-.06-4.22s.01-3.12.06-4.22c.05-1.1.24-1.75.38-2.13.16-.45.4-.85.77-1.22.37-.37.77-.61 1.22-.77.38-.14 1.03-.33 2.13-.38C8.88 2.01 9.25 2 12 2zm0 1.9c-2.71 0-3.05.01-4.12.06-.98.05-1.48.23-1.77.33-.3.11-.53.25-.75.47s-.36.45-.47.75c-.1.29-.28.79-.33 1.77-.05 1.07-.06 1.41-.06 4.12s.01 3.05.06 4.12c.05.98.23 1.48.33 1.77.11.3.25.53.47.75s.45.36.75.47c.29.1.79.28 1.77.33 1.07.05 1.41.06 4.12.06s3.05-.01 4.12-.06c.98-.05 1.48-.23 1.77-.33.3-.11.53-.25.75-.47s.36-.45.47-.75c.1-.29.28-.79.33-1.77.05-1.07.06-1.41.06-4.12s-.01-3.05-.06-4.12c-.05-.98-.23-1.48-.33-1.77-.11-.3-.25-.53-.47-.75s-.45-.36-.75-.47c-.29-.1-.79-.28-1.77-.33-1.07-.05-1.41-.06-4.12-.06zm0 2.7c2.49 0 4.5 2.01 4.5 4.5s-2.01 4.5-4.5 4.5-4.5-2.01-4.5-4.5 2.01-4.5 4.5-4.5zm0 1.9c-1.43 0-2.6 1.17-2.6 2.6s1.17 2.6 2.6 2.6 2.6-1.17 2.6-2.6-1.17-2.6-2.6-2.6zm6.1-4.2a.9.9 0 01.9-.9.9.9 0 01.9.9.9.9 0 01-.9.9.9.9 0 01-.9-.9z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.529v-5.592c0-1.336-.027-3.052-1.853-3.052-1.853 0-2.136 1.445-2.136 2.955v5.689h-3.53v-11.96h3.385v1.64h.046c.475-.873 1.637-1.853 3.336-1.853 3.56 0 4.21 2.368 4.21 5.44v6.726h-3.529zM5.337 8.35v11.965h-3.52V8.35h3.52zM3.667 3.23c-1.177 0-1.758.627-1.758 1.438 0 .809.562 1.438 1.725 1.438h.034c1.196 0 1.758-.629 1.758-1.438 0-.811-.582-1.438-1.79-1.438z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">
+                © 2024 Ascend Academy. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
