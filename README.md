@@ -1,1 +1,1 @@
-# Learnify
+# Learnify- Online Learning Platform
